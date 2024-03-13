@@ -37,7 +37,8 @@ rs_noncloudy_data <- df_clean %>%
   ) %>% 
   filter(season == 'spring' | season == 'winter')
 
-str(rs_noncloudy_data)
+#str(rs_noncloudy_data)
+
 # Average number of cloud images per year
 
 # avg_cloudy_images <- df_clean %>% 
@@ -71,7 +72,8 @@ rs_test_data <- rs_noncloudy_data %>%
 
 # 3. Use prediction model on rs_test-data---------------------------------------
 
-# Ice on model
+# **3a. Ice on model ------------------------------------------------------
+
 
 rs_test_ice_on <- rs_test_data %>% 
   filter(season == 'winter') %>% 
@@ -100,8 +102,8 @@ rs_results_tbl_ice_on <- bind_cols(
 
 #write_csv(rs_results_tbl_ice_on, here('data/n_american_ice_phenology/rs_results_tbl_ice_on.csv'))
 
+# **3b. Ice off model -----------------------------------------------------
 
-# Ice off model
 
 rs_test_ice_off <- rs_test_data %>% 
   filter(season == 'spring') %>% 
@@ -128,4 +130,4 @@ rs_results_tbl_ice_off <- bind_cols(
 
 # Write the csv into the N. America results section
 
-write_csv(rs_results_tbl_ice_off, here('data/n_american_ice_phenology/rs_results_tbl_ice_off.csv'))
+#write_csv(rs_results_tbl_ice_off, here('data/n_american_ice_phenology/rs_results_tbl_ice_off.csv'))
