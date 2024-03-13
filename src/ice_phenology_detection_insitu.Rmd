@@ -197,6 +197,7 @@ merged_pdates = pdates %>%
 
 #write_csv(merged_pdates, here('data/combined/merged_pdates.csv'))
 
+
 merged_pdates %>% 
   mutate(dif = sdoy_fit - as.numeric(sdoy)) %>%
   group_by(lakename, event) %>% 

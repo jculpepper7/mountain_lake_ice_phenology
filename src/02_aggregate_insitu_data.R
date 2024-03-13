@@ -182,5 +182,5 @@ all_insitu_w_water_year <- all_insitu_ice_data %>%
 
 # 5. Write CSV with new data --------------------------------------------
 
-write_csv(all_insitu_ice_data, here("data/combined/all_insitu_ice_data.csv"))
-write_csv(all_insitu_w_water_year, here("data/combined/all_insitu_water_year.csv"))
+#write_csv(all_insitu_ice_data, here("data/combined/all_insitu_ice_data.csv"))
+#write_csv(all_insitu_w_water_year, here("data/combined/all_insitu_water_year.csv"))
