@@ -1,6 +1,6 @@
 #Below is the link to the Google Earth Engine (GEE) data
 #
-#https://code.earthengine.google.com/?scriptPath=users%2Fjoshuaculpepper7%2FMountain_ice_phenology%3Anorth_america_ice_phenology_2024.03.12
+#https://code.earthengine.google.com/e1aca247dfd49acdb57da752e7a46618
 #
 #The data combines MODIS imagery from both Aqua and Terra satellites 
 #
